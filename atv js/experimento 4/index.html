@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experimento 4 - Banco Digital</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="exp4.js">
+</head>
+<body>
+  <div class="container">
+    <h1>Experimento 4: Simulação de Banco Digital</h1>
+
+    <div class="card status-conta">
+      <div>
+        <h2 id="titular-nome">Titular: -</h2>
+        <span class="subtext">Conta Corrente</span>
+      </div>
+      <div class="saldo-box">
+        <small>Saldo Atual</small>
+        <p id="saldo-valor">R$ 0,00</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Operações</h2>
+      <div class="form-operacao">
+        <input type="number" id="valor-operacao" placeholder="Valor (R$)" min="0.01" step="0.01">
+        <button onclick="operar('deposito')" class="btn btn-deposito">Depositar</button>
+        <button onclick="operar('saque')" class="btn btn-saque">Sacar</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Extrato de Movimentações</h2>
+      <ul id="lista-extrato" class="extrato-lista"></ul>
+    </div>
+
+    <div class="grid-resumo">
+      <div class="card-info verde">
+        <h3>Total Depósitos</h3>
+        <p id="resumo-depositos">R$ 0,00</p>
+      </div>
+      <div class="card-info vermelho">
+        <h3>Total Saques</h3>
+        <p id="resumo-saques">R$ 0,00</p>
+      </div>
+      <div class="card-info">
+        <h3>Maior Movimentação</h3>
+        <p id="resumo-maior-mov">-</p>
+      </div>
+    </div>
+  </div>
+
+  
+</body>
+</html>

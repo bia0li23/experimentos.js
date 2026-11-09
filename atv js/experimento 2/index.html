@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experimento 2 - Gerenciamento de Alunos</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="exp2.js">
+</head>
+<body>
+  <div class="container">
+    <h1>Experimento 2: Gerenciamento de Alunos</h1>
+
+    <form id="form-aluno" class="card">
+      <h2>Cadastrar Aluno</h2>
+      <div class="form-row">
+        <input type="text" id="nome" placeholder="Nome" required>
+        <input type="number" id="idade" placeholder="Idade" min="1" required>
+        <input type="text" id="curso" placeholder="Curso" required>
+      </div>
+      <div class="form-row">
+        <input type="text" id="notas" placeholder="Notas separadas por vírgula (ex: 8, 7.5, 9)" required>
+      </div>
+      <button type="submit" class="btn">Cadastrar Aluno</button>
+    </form>
+
+    <div class="card">
+      <h2>Lista de Alunos e Médias</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Curso</th>
+            <th>Média</th>
+            <th>Situação</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-alunos"></tbody>
+      </table>
+    </div>
+
+    <div class="grid-resumo">
+      <div class="card-info">
+        <h3>Alunos Aprovados</h3>
+        <p id="resumo-aprovados">-</p>
+      </div>
+      <div class="card-info">
+        <h3>Maior Média</h3>
+        <p id="resumo-maior-media">-</p>
+      </div>
+      <div class="card-info">
+        <h3>Média Geral da Turma</h3>
+        <p id="resumo-media-geral">0.00</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

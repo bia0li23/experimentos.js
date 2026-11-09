@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experimento 3 - Loja Virtual</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="exp3.js">
+</head>
+<body>
+  <div class="container">
+    <h1>Experimento 3: Loja Virtual</h1>
+
+    <div class="card toolbar">
+      <input type="text" id="filtro-categoria" placeholder="Buscar por Categoria (ex: Roupas)..." oninput="atualizarInterface()">
+      <button class="btn-compra" onclick="realizarCompra()">Simular Compra</button>
+    </div>
+
+    <div class="card">
+      <h2>Catálogo de Produtos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Categoria</th>
+            <th>Preço</th>
+            <th>Estoque</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-produtos"></tbody>
+      </table>
+    </div>
+
+    <div class="grid-resumo">
+      <div class="card-info">
+        <h3>Valor Total do Estoque</h3>
+        <p id="resumo-total-estoque">R$ 0,00</p>
+      </div>
+      <div class="card-info alerta">
+        <h3>Pouco Estoque (< 5)</h3>
+        <p id="resumo-pouco-estoque">-</p>
+      </div>
+      <div class="card-info">
+        <h3>Produto Mais Caro</h3>
+        <p id="resumo-mais-caro">-</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+background-color: #0f172a;
+color: #f8fafc;
+padding: 20px;
+}
+
+.container {
+max-width: 800px;
+margin: 0 auto;
+}
+
+h1 {
+text-align: center;
+color: #38bdf8;
+margin-bottom: 20px;
+}
+
+.card {
+background: #1e293b;
+padding: 20px;
+border-radius: 8px;
+margin-bottom: 20px;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+font-size: 1.1rem;
+color: #94a3b8;
+margin-bottom: 15px;
+}
+
+.status-conta {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.subtext {
+color: #64748b;
+font-size: 0.9rem;
+}
+
+.saldo-box {
+text-align: right;
+}
+
+.saldo-box small {
+color: #94a3b8;
+}
+
+.saldo-box p {
+font-size: 1.5rem;
+font-weight: bold;
+color: #4ade80;
+}
+
+.form-operacao {
+display: flex;
+gap: 10px;
+}
+
+.form-operacao input {
+flex: 1;
+padding: 10px;
+border: 1px solid #334155;
+background: #0f172a;
+color: white;
+border-radius: 4px;
+}
+
+.btn {
+padding: 10px 20px;
+border: none;
+border-radius: 4px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.btn-deposito {
+background-color: #22c55e;
+color: white;
+}
+
+.btn-deposito:hover {
+background-color: #16a34a;
+}
+
+.btn-saque {
+background-color: #ef4444;
+color: white;
+}
+
+.btn-saque:hover {
+background-color: #dc2626;
+}
+
+.extrato-lista {
+list-style: none;
+}
+
+.extrato-lista li {
+display: flex;
+justify-content: space-between;
+padding: 10px;
+border-bottom: 1px solid #334155;
+}
+
+.extrato-lista li.deposito strong {
+color: #4ade80;
+}
+
+.extrato-lista li.saque strong {
+color: #f87171;
+}
+
+.grid-resumo {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 15px;
+}
+
+.card-info {
+background: #1e293b;
+padding: 15px;
+border-radius: 8px;
+border-left: 4px solid #38bdf8;
+}
+
+.card-info.verde {
+border-left-color: #22c55e;
+}
+
+.card-info.vermelho {
+border-left-color: #ef4444;
+}
+
+.card-info h3 {
+font-size: 0.8rem;
+color: #94a3b8;
+text-transform: uppercase;
+margin-bottom: 5px;
+}
+
+.card-info p {
+font-size: 1.1rem;
+font-weight: bold;
+}
